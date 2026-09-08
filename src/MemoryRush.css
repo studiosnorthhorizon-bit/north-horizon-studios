@@ -1,0 +1,735 @@
+* {
+  box-sizing: border-box;
+}
+
+.memory-rush-page {
+  min-height: calc(100vh - 72px);
+  background:
+    radial-gradient(
+      circle at 50% 15%,
+      rgba(255, 255, 255, 0.035),
+      transparent 35%
+    ),
+    #080b0f;
+  color: #f4f5f7;
+  padding: 105px 28px 80px;
+  font-family: inherit;
+}
+
+.memory-rush-layout {
+  width: min(1380px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns:
+    minmax(280px, 0.72fr)
+    minmax(520px, 1.28fr);
+  column-gap: clamp(38px, 6vw, 100px);
+  align-items: start;
+}
+
+/* INFO */
+
+.memory-rush-info {
+  padding-top: 18px;
+}
+
+.memory-rush-eyebrow {
+  margin: 0 0 18px;
+  color: #858c96;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.memory-rush-info h1 {
+  margin: 0;
+  font-size: clamp(50px, 6vw, 86px);
+  line-height: 0.88;
+  letter-spacing: -0.055em;
+  font-weight: 800;
+}
+
+.memory-rush-subtitle {
+  max-width: 360px;
+  margin: 28px 0 0;
+  color: #aab0b9;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.memory-rush-desktop-ad {
+  width: min(360px, 100%);
+  min-height: 74px;
+  margin-top: 46px;
+  border: 1px solid #20252c;
+  background: #0b0f14;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #626975;
+}
+
+.memory-rush-desktop-ad span,
+.memory-rush-inline-ad span,
+.memory-rush-fullscreen-ad span {
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+}
+
+.memory-rush-desktop-ad div,
+.memory-rush-inline-ad div,
+.memory-rush-fullscreen-ad div {
+  margin-top: 7px;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+}
+
+.memory-rush-description {
+  max-width: 390px;
+  margin-top: 42px;
+  color: #747b85;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.memory-rush-description p {
+  margin: 0 0 16px;
+}
+
+/* GAME */
+
+.memory-rush-game-column {
+  width: 100%;
+}
+
+.memory-rush-game-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 680px;
+  border: 1px solid #20252c;
+  background: #0b0f14;
+  overflow: hidden;
+}
+
+/* TOP BAR */
+
+.memory-rush-topbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 0 22px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.055);
+  background: rgba(8, 11, 15, 0.92);
+  backdrop-filter: blur(10px);
+}
+
+.memory-rush-topbar > div {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+}
+
+.memory-rush-topbar span {
+  color: #68707a;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.memory-rush-topbar strong {
+  color: #f5f6f7;
+  font-size: 20px;
+  font-weight: 700;
+  min-width: 28px;
+}
+
+.memory-rush-fullscreen-button {
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #2a3038;
+  background: #11161c;
+  color: #d8dce1;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.memory-rush-fullscreen-button:hover {
+  background: #171c23;
+}
+
+/* STAGE */
+
+.memory-rush-stage {
+  position: relative;
+  min-height: 680px;
+  height: 680px;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.018) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.018) 1px,
+      transparent 1px
+    ),
+    #0a0e13;
+  background-size: 44px 44px;
+}
+
+.memory-rush-stage::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at 50% 45%,
+    transparent 0,
+    rgba(0, 0, 0, 0.08) 55%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+}
+
+/* PLAY AREA */
+
+.memory-rush-play-area {
+  position: absolute;
+  inset: 72px 0 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.memory-rush-status {
+  margin-bottom: 20px;
+  color: #737b85;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
+.memory-rush-grid {
+  width: min(72%, 460px);
+  aspect-ratio: 1;
+  display: grid;
+  gap: 8px;
+}
+
+.memory-rush-tile {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  padding: 0;
+  border: 1px solid #252c34;
+  border-radius: 6px;
+  background:
+    linear-gradient(
+      145deg,
+      #11161c,
+      #0c1117
+    );
+  cursor: pointer;
+  transition:
+    background 120ms ease,
+    border-color 120ms ease,
+    transform 100ms ease,
+    box-shadow 120ms ease;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.memory-rush-tile::after {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.025);
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+.memory-rush-tile:not(:disabled):active {
+  transform: scale(0.94);
+}
+
+.memory-rush-tile-active {
+  border-color: #f1f3f5;
+  background:
+    radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.22),
+      rgba(255, 255, 255, 0.07) 45%,
+      #11161c 75%
+    );
+  box-shadow:
+    0 0 22px rgba(255, 255, 255, 0.22),
+    inset 0 0 22px rgba(255, 255, 255, 0.08);
+  transform: scale(0.965);
+}
+
+.memory-rush-tile-selected {
+  border-color: #555e69;
+  background: #151b22;
+}
+
+.memory-rush-tile-selected span {
+  color: #8e97a2;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.memory-rush-hint {
+  margin-top: 18px;
+  color: #59616b;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.17em;
+}
+
+/* OVERLAY */
+
+.memory-rush-overlay {
+  position: absolute;
+  inset: 72px 0 0;
+  z-index: 7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  background: rgba(5, 8, 11, 0.78);
+  backdrop-filter: blur(5px);
+}
+
+.memory-rush-overlay-kicker {
+  margin: 0 0 10px;
+  color: #737b85;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+}
+
+.memory-rush-overlay h2 {
+  margin: 0;
+  font-size: clamp(52px, 7vw, 82px);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+.memory-rush-overlay > p:not(
+  .memory-rush-overlay-kicker
+) {
+  max-width: 360px;
+  margin: 18px 0 28px;
+  color: #9198a1;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.memory-rush-overlay-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.memory-rush-primary-button,
+.memory-rush-reward-button {
+  min-height: 48px;
+  padding: 0 20px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+}
+
+.memory-rush-primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: 1px solid #e4e7eb;
+  background: #e9ebee;
+  color: #090c10;
+}
+
+.memory-rush-primary-button:hover {
+  background: #ffffff;
+}
+
+.memory-rush-reward-button {
+  border: 1px solid #313842;
+  background: #11161c;
+  color: #c6cbd1;
+}
+
+.memory-rush-reward-button:hover:not(:disabled) {
+  background: #171d24;
+  border-color: #59616b;
+}
+
+.memory-rush-reward-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* AD LOADING */
+
+.memory-rush-ad-loading {
+  position: absolute;
+  inset: 72px 0 0;
+  z-index: 12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background: rgba(5, 8, 11, 0.9);
+  backdrop-filter: blur(7px);
+}
+
+.memory-rush-ad-loading span {
+  color: #7e8791;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+}
+
+.memory-rush-ad-spinner {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #252b33;
+  border-top-color: #dfe2e6;
+  border-radius: 50%;
+  animation: memoryRushAdSpin 0.8s linear infinite;
+}
+
+@keyframes memoryRushAdSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ADS */
+
+.memory-rush-inline-ad {
+  min-height: 76px;
+  margin-top: 14px;
+  border: 1px solid #20252c;
+  background: #0b0f14;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #626975;
+}
+
+.memory-rush-fullscreen-ad {
+  flex: 0 0 72px;
+  min-height: 72px;
+  border-top: 1px solid #20252c;
+  background: #090d12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #626975;
+}
+
+.memory-rush-fullscreen-ad div {
+  margin-top: 0;
+}
+
+/* DIFFICULTY */
+
+.memory-rush-controls {
+  margin-top: 16px;
+}
+
+.memory-rush-mode-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.memory-rush-mode-heading span {
+  color: #707883;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+}
+
+.memory-rush-mode-heading small {
+  color: #c5cad0;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.memory-rush-mode-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.memory-rush-mode {
+  min-height: 58px;
+  border: 1px solid #20262e;
+  background: #0b0f14;
+  color: #737b85;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: left;
+  padding: 11px 13px;
+}
+
+.memory-rush-mode strong {
+  display: block;
+  color: #9ba2ab;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+
+.memory-rush-mode span {
+  display: block;
+  margin-top: 5px;
+  font-size: 9px;
+  color: #5e6670;
+  letter-spacing: 0.08em;
+}
+
+.memory-rush-mode.active {
+  border-color: #747c86;
+  background: #12171d;
+}
+
+.memory-rush-mode.active strong {
+  color: #f1f3f5;
+}
+
+.memory-rush-mode:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+/* MOBILE DESCRIPTION */
+
+.memory-rush-mobile-description {
+  display: none;
+}
+
+/* FULLSCREEN */
+
+.memory-rush-game-wrapper.memory-rush-fullscreen {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  width: 100vw;
+  height: 100dvh;
+  min-height: 100dvh;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: #080b0f;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.memory-rush-game-wrapper.memory-rush-fullscreen
+  .memory-rush-stage {
+  flex: 1 1 auto;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  max-height: none;
+}
+
+.memory-rush-game-wrapper:fullscreen {
+  width: 100vw;
+  height: 100dvh;
+  min-height: 100dvh;
+  border: 0;
+  background: #080b0f;
+}
+
+.memory-rush-game-wrapper:fullscreen
+  .memory-rush-stage {
+  flex: 1 1 auto;
+  height: auto;
+  min-height: 0;
+}
+
+/* TABLET */
+
+@media (max-width: 950px) {
+  .memory-rush-page {
+    padding: 88px 18px 70px;
+  }
+
+  .memory-rush-layout {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .memory-rush-info {
+    display: none;
+  }
+
+  .memory-rush-game-wrapper {
+    min-height: calc(100svh - 185px);
+  }
+
+  .memory-rush-stage {
+    height: calc(100svh - 185px);
+    min-height: 540px;
+  }
+
+  .memory-rush-inline-ad {
+    margin-top: 12px;
+  }
+
+  .memory-rush-mobile-description {
+    display: block;
+    margin-top: 0;
+    padding-top: 110px;
+    color: #747b85;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .memory-rush-mobile-description p {
+    margin: 0 0 16px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .memory-rush-page {
+    padding: 70px 10px 60px;
+    min-height: 100vh;
+  }
+
+  .memory-rush-game-wrapper {
+    min-height: calc(100svh - 185px);
+  }
+
+  .memory-rush-stage {
+    height: calc(100svh - 185px);
+    min-height: 500px;
+  }
+
+  .memory-rush-topbar {
+    height: 62px;
+    padding: 0 13px;
+    gap: 16px;
+  }
+
+  .memory-rush-topbar strong {
+    font-size: 17px;
+  }
+
+  .memory-rush-topbar span {
+    font-size: 8px;
+  }
+
+  .memory-rush-fullscreen-button {
+    width: 37px;
+    height: 37px;
+  }
+
+  .memory-rush-play-area {
+    inset: 62px 0 0;
+    padding: 20px 12px;
+  }
+
+  .memory-rush-status {
+    margin-bottom: 15px;
+    font-size: 8px;
+  }
+
+  .memory-rush-grid {
+    width: min(88%, 390px);
+    gap: 6px;
+  }
+
+  .memory-rush-overlay {
+    inset: 62px 0 0;
+    padding: 28px 18px;
+  }
+
+  .memory-rush-overlay h2 {
+    font-size: 54px;
+  }
+
+  .memory-rush-overlay-actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .memory-rush-primary-button,
+  .memory-rush-reward-button {
+    width: min(280px, 100%);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .memory-rush-inline-ad {
+    min-height: 70px;
+  }
+
+  .memory-rush-mode-buttons {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .memory-rush-mode {
+    min-height: 57px;
+  }
+
+  .memory-rush-mobile-description {
+    padding-top: 110px;
+  }
+}
+
+/* LANDSCAPE */
+
+@media (max-height: 650px) and (orientation: landscape) {
+  .memory-rush-play-area {
+    padding-top: 12px;
+  }
+
+  .memory-rush-status {
+    margin-bottom: 10px;
+  }
+
+  .memory-rush-grid {
+    width: min(58vh, 390px);
+  }
+
+  .memory-rush-hint {
+    margin-top: 9px;
+  }
+}

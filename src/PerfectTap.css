@@ -1,0 +1,741 @@
+* {
+  box-sizing: border-box;
+}
+
+.perfect-tap-page {
+  min-height: calc(100vh - 72px);
+  background:
+    radial-gradient(
+      circle at 50% 15%,
+      rgba(255, 255, 255, 0.035),
+      transparent 35%
+    ),
+    #080b0f;
+  color: #f4f5f7;
+  padding: 105px 28px 80px;
+  font-family: inherit;
+}
+
+.perfect-tap-layout {
+  width: min(1380px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns:
+    minmax(280px, 0.72fr)
+    minmax(520px, 1.28fr);
+  column-gap: clamp(38px, 6vw, 100px);
+  align-items: start;
+}
+
+/* INFO */
+
+.perfect-tap-info {
+  padding-top: 18px;
+}
+
+.perfect-tap-eyebrow {
+  margin: 0 0 18px;
+  color: #858c96;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.perfect-tap-info h1 {
+  margin: 0;
+  font-size: clamp(50px, 6vw, 86px);
+  line-height: 0.88;
+  letter-spacing: -0.055em;
+  font-weight: 800;
+}
+
+.perfect-tap-subtitle {
+  max-width: 360px;
+  margin: 28px 0 0;
+  color: #aab0b9;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.perfect-tap-desktop-ad {
+  width: min(360px, 100%);
+  min-height: 74px;
+  margin-top: 46px;
+  border: 1px solid #20252c;
+  background: #0b0f14;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #626975;
+}
+
+.perfect-tap-desktop-ad span,
+.perfect-tap-inline-ad span,
+.perfect-tap-fullscreen-ad span {
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+}
+
+.perfect-tap-desktop-ad div,
+.perfect-tap-inline-ad div,
+.perfect-tap-fullscreen-ad div {
+  margin-top: 7px;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+}
+
+.perfect-tap-description {
+  max-width: 390px;
+  margin-top: 42px;
+  color: #747b85;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.perfect-tap-description p {
+  margin: 0 0 16px;
+}
+
+/* GAME */
+
+.perfect-tap-game-column {
+  width: 100%;
+}
+
+.perfect-tap-game-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 680px;
+  border: 1px solid #20252c;
+  background: #0b0f14;
+  overflow: hidden;
+}
+
+/* TOP BAR */
+
+.perfect-tap-topbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 0 22px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.055);
+  background: rgba(8, 11, 15, 0.92);
+  backdrop-filter: blur(10px);
+}
+
+.perfect-tap-topbar > div {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+}
+
+.perfect-tap-topbar span {
+  color: #68707a;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.perfect-tap-topbar strong {
+  color: #f5f6f7;
+  font-size: 20px;
+  font-weight: 700;
+  min-width: 28px;
+}
+
+.perfect-tap-fullscreen-button {
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #2a3038;
+  background: #11161c;
+  color: #d8dce1;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.perfect-tap-fullscreen-button:hover {
+  background: #171c23;
+}
+
+/* STAGE */
+
+.perfect-tap-stage {
+  position: relative;
+  min-height: 680px;
+  height: 680px;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.018) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.018) 1px,
+      transparent 1px
+    ),
+    #0a0e13;
+  background-size: 44px 44px;
+}
+
+.perfect-tap-stage::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at 50% 45%,
+    transparent 0,
+    rgba(0, 0, 0, 0.08) 55%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+}
+
+/* PLAY AREA */
+
+.perfect-tap-play-area {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.perfect-tap-instruction {
+  margin-bottom: 22px;
+  color: #69717b;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
+.perfect-tap-track {
+  position: relative;
+  width: min(82%, 570px);
+  height: 62px;
+  border: 1px solid #292f37;
+  background: #11161c;
+  border-radius: 6px;
+  box-shadow:
+    inset 0 0 24px rgba(0, 0, 0, 0.5),
+    0 0 30px rgba(0, 0, 0, 0.25);
+}
+
+.perfect-tap-track::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.perfect-tap-target-zone {
+  position: absolute;
+  top: 6px;
+  bottom: 6px;
+  border: 1px solid #f0f2f4;
+  background: rgba(255, 255, 255, 0.13);
+  box-shadow:
+    0 0 20px rgba(255, 255, 255, 0.09),
+    inset 0 0 14px rgba(255, 255, 255, 0.06);
+  transition:
+    left 140ms ease,
+    width 140ms ease;
+}
+
+.perfect-tap-marker {
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  width: 3px;
+  transform: translateX(-50%);
+  background: #ffffff;
+  box-shadow:
+    0 0 8px rgba(255, 255, 255, 0.9),
+    0 0 20px rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+}
+
+.perfect-tap-marker-perfect {
+  width: 5px;
+  box-shadow:
+    0 0 12px rgba(255, 255, 255, 1),
+    0 0 28px rgba(255, 255, 255, 0.7);
+}
+
+.perfect-tap-feedback {
+  height: 26px;
+  margin-top: 22px;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.22em;
+  opacity: 0;
+  transform: translateY(5px);
+  transition:
+    opacity 120ms ease,
+    transform 120ms ease;
+}
+
+.perfect-tap-feedback-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.perfect-tap-score-hint {
+  margin-top: 12px;
+  color: #59616b;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.17em;
+}
+
+/* OVERLAY */
+
+.perfect-tap-overlay {
+  position: absolute;
+  inset: 72px 0 0;
+  z-index: 7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  background: rgba(5, 8, 11, 0.78);
+  backdrop-filter: blur(5px);
+}
+
+.perfect-tap-overlay-kicker {
+  margin: 0 0 10px;
+  color: #737b85;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+}
+
+.perfect-tap-overlay h2 {
+  margin: 0;
+  font-size: clamp(52px, 7vw, 82px);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+.perfect-tap-overlay > p:not(
+  .perfect-tap-overlay-kicker
+) {
+  max-width: 360px;
+  margin: 18px 0 28px;
+  color: #9198a1;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.perfect-tap-overlay-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.perfect-tap-primary-button,
+.perfect-tap-reward-button {
+  min-height: 48px;
+  padding: 0 20px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+}
+
+.perfect-tap-primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: 1px solid #e4e7eb;
+  background: #e9ebee;
+  color: #090c10;
+}
+
+.perfect-tap-primary-button:hover {
+  background: #ffffff;
+}
+
+.perfect-tap-reward-button {
+  border: 1px solid #313842;
+  background: #11161c;
+  color: #c6cbd1;
+}
+
+.perfect-tap-reward-button:hover:not(:disabled) {
+  background: #171d24;
+  border-color: #59616b;
+}
+
+.perfect-tap-reward-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* AD LOADING */
+
+.perfect-tap-ad-loading {
+  position: absolute;
+  inset: 72px 0 0;
+  z-index: 12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background: rgba(5, 8, 11, 0.9);
+  backdrop-filter: blur(7px);
+}
+
+.perfect-tap-ad-loading span {
+  color: #7e8791;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+}
+
+.perfect-tap-ad-spinner {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #252b33;
+  border-top-color: #dfe2e6;
+  border-radius: 50%;
+  animation: perfectTapAdSpin 0.8s linear infinite;
+}
+
+@keyframes perfectTapAdSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ADS */
+
+.perfect-tap-inline-ad {
+  min-height: 76px;
+  margin-top: 14px;
+  border: 1px solid #20252c;
+  background: #0b0f14;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #626975;
+}
+
+.perfect-tap-fullscreen-ad {
+  flex: 0 0 72px;
+  min-height: 72px;
+  border-top: 1px solid #20252c;
+  background: #090d12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #626975;
+}
+
+.perfect-tap-fullscreen-ad div {
+  margin-top: 0;
+}
+
+/* DIFFICULTY */
+
+.perfect-tap-controls {
+  margin-top: 16px;
+}
+
+.perfect-tap-mode-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.perfect-tap-mode-heading span {
+  color: #707883;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+}
+
+.perfect-tap-mode-heading small {
+  color: #c5cad0;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.perfect-tap-mode-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.perfect-tap-mode {
+  min-height: 58px;
+  border: 1px solid #20262e;
+  background: #0b0f14;
+  color: #737b85;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: left;
+  padding: 11px 13px;
+}
+
+.perfect-tap-mode strong {
+  display: block;
+  color: #9ba2ab;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+
+.perfect-tap-mode span {
+  display: block;
+  margin-top: 5px;
+  font-size: 9px;
+  color: #5e6670;
+  letter-spacing: 0.08em;
+}
+
+.perfect-tap-mode.active {
+  border-color: #747c86;
+  background: #12171d;
+}
+
+.perfect-tap-mode.active strong {
+  color: #f1f3f5;
+}
+
+.perfect-tap-mode:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+/* MOBILE DESCRIPTION */
+
+.perfect-tap-mobile-description {
+  display: none;
+}
+
+/* FULLSCREEN */
+
+.perfect-tap-game-wrapper.perfect-tap-fullscreen {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  width: 100vw;
+  height: 100dvh;
+  min-height: 100dvh;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: #080b0f;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.perfect-tap-game-wrapper.perfect-tap-fullscreen
+  .perfect-tap-stage {
+  flex: 1 1 auto;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  max-height: none;
+}
+
+.perfect-tap-game-wrapper:fullscreen {
+  width: 100vw;
+  height: 100dvh;
+  min-height: 100dvh;
+  border: 0;
+  background: #080b0f;
+}
+
+.perfect-tap-game-wrapper:fullscreen
+  .perfect-tap-stage {
+  flex: 1 1 auto;
+  height: auto;
+  min-height: 0;
+}
+
+/* TABLET */
+
+@media (max-width: 950px) {
+  .perfect-tap-page {
+    padding: 88px 18px 70px;
+  }
+
+  .perfect-tap-layout {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .perfect-tap-info {
+    display: none;
+  }
+
+  .perfect-tap-game-wrapper {
+    min-height: calc(100svh - 185px);
+  }
+
+  .perfect-tap-stage {
+    height: calc(100svh - 185px);
+    min-height: 540px;
+  }
+
+  .perfect-tap-inline-ad {
+    margin-top: 12px;
+  }
+
+  .perfect-tap-mobile-description {
+    display: block;
+    margin-top: 0;
+    padding-top: 110px;
+    color: #747b85;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .perfect-tap-mobile-description p {
+    margin: 0 0 16px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .perfect-tap-page {
+    padding: 70px 10px 60px;
+    min-height: 100vh;
+  }
+
+  .perfect-tap-game-wrapper {
+    min-height: calc(100svh - 185px);
+  }
+
+  .perfect-tap-stage {
+    height: calc(100svh - 185px);
+    min-height: 500px;
+  }
+
+  .perfect-tap-topbar {
+    height: 62px;
+    padding: 0 13px;
+    gap: 16px;
+  }
+
+  .perfect-tap-topbar strong {
+    font-size: 17px;
+  }
+
+  .perfect-tap-topbar span {
+    font-size: 8px;
+  }
+
+  .perfect-tap-fullscreen-button {
+    width: 37px;
+    height: 37px;
+  }
+
+  .perfect-tap-play-area {
+    padding: 24px 12px;
+  }
+
+  .perfect-tap-instruction {
+    margin-bottom: 18px;
+    font-size: 8px;
+  }
+
+  .perfect-tap-track {
+    width: 88%;
+    height: 58px;
+  }
+
+  .perfect-tap-overlay {
+    inset: 62px 0 0;
+    padding: 28px 18px;
+  }
+
+  .perfect-tap-overlay h2 {
+    font-size: 54px;
+  }
+
+  .perfect-tap-overlay-actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .perfect-tap-primary-button,
+  .perfect-tap-reward-button {
+    width: min(280px, 100%);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .perfect-tap-inline-ad {
+    min-height: 70px;
+  }
+
+  .perfect-tap-mode-buttons {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .perfect-tap-mode {
+    min-height: 57px;
+  }
+
+  .perfect-tap-mobile-description {
+    padding-top: 110px;
+  }
+}
+
+/* LANDSCAPE MOBILE */
+
+@media (max-height: 650px) and (orientation: landscape) {
+  .perfect-tap-play-area {
+    padding-top: 12px;
+  }
+
+  .perfect-tap-instruction {
+    margin-bottom: 10px;
+  }
+
+  .perfect-tap-track {
+    height: 48px;
+  }
+
+  .perfect-tap-feedback {
+    margin-top: 10px;
+  }
+}
