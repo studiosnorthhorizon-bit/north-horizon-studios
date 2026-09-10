@@ -25,7 +25,7 @@ const games = [
     category: "Mobile · Endless Runner",
     status: "In Development",
     description:
-      "Run, react and survive. A fast-paced endless runner built for quick sessions.",
+      "Run, react and survive. A fast paced endless runner built for quick sessions.",
     image:
       "/assets/home/kakeru.png",
   },
@@ -64,10 +64,7 @@ function GameRow({ game, index }) {
 
         <p>{game.description}</p>
 
-        <button className="game-details-button">
-          Coming Soon
-          <ArrowRight size={16} />
-        </button>
+        <span className="game-details-label">COMING SOON</span>
       </div>
     </article>
   );
@@ -93,7 +90,7 @@ export default function Games() {
             <br />
             WE'RE
             <br />
-            BUILDING.
+            BUILDING
           </h1>
 
           <p>
@@ -111,16 +108,16 @@ export default function Games() {
         </div>
 
         <h2>
-          SMALL TEAM.
+          SMALL TEAM
           <br />
-          BIG IDEAS.
+          BIG IDEAS
         </h2>
 
         <p>
           We're building a collection of original games across
           mobile and web. Some are experiments, some are bigger
-          ambitions — all of them start with one simple question:
-          can we make something people genuinely enjoy playing?
+          ambitions, all of them start with one simple question.
+          can we make something people genuinely enjoy playing.
         </p>
       </section>
 
@@ -141,13 +138,13 @@ export default function Games() {
       <section className="games-arcade-cta">
         <div>
           <div className="eyebrow">
-            WANT SOMETHING TO PLAY NOW?
+            WANT SOMETHING TO PLAY NOW
           </div>
 
           <h2>
             TRY THE
             <br />
-            ARCADE.
+            ARCADE
           </h2>
         </div>
 

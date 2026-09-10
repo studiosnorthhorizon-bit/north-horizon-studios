@@ -15,7 +15,7 @@ const sections = {
         paragraphs: [
           "We aim to collect only information that is reasonably necessary to operate, secure, improve, and communicate about our website and services.",
           "Depending on how you use the site, this may include information you choose to provide to us, such as your name, email address, and the contents of a message submitted through our contact channels.",
-          "Technical information may also be processed automatically by your browser, hosting provider, security systems, or third-party services. This can include IP address, browser type, device type, operating system, approximate location derived from IP address, referring pages, and information about requests made to our website.",
+          "Technical information may also be processed automatically by your browser, hosting provider, security systems, or third party services. This can include IP address, browser type, device type, operating system, approximate location derived from IP address, referring pages, and information about requests made to our website.",
           "Our browser games may store gameplay information such as high scores, settings, or game progress locally on your device using browser storage. This information is generally stored on your device rather than transmitted to us."
         ]
       },
@@ -27,17 +27,17 @@ const sections = {
         ]
       },
       {
-        heading: "3. Advertising and Third-Party Services",
+        heading: "3. Advertising and Third Party Services",
         paragraphs: [
-          "Advertising may be displayed on our Arcade and individual game pages. When advertising is enabled, third-party advertising providers, including Google and its partners, may use cookies, device identifiers, IP addresses, or similar technologies to serve, measure, limit, or personalize advertising, subject to their own policies and the choices available to users.",
+          "Advertising may be displayed on our Arcade and individual game pages. When advertising is enabled, third party advertising providers, including Google and its partners, may use cookies, device identifiers, IP addresses, or similar technologies to serve, measure, limit, or personalize advertising, subject to their own policies and the choices available to users.",
           "Google requires publishers using its advertising products to disclose relevant data collection and the use of cookies or similar technologies. For more information about how Google uses data when you use partner sites or apps, please review Google's published privacy information.",
-          "We do not control the privacy practices of third-party providers. Their processing is governed by their own privacy policies and terms."
+          "We do not control the privacy practices of third party providers. Their processing is governed by their own privacy policies and terms."
         ]
       },
       {
         heading: "4. Cookies and Similar Technologies",
         paragraphs: [
-          "We may use cookies and similar technologies that are necessary for website operation, security, preferences, measurement, or advertising. Some cookies may be placed by third-party services used on the website.",
+          "We may use cookies and similar technologies that are necessary for website operation, security, preferences, measurement, or advertising. Some cookies may be placed by third party services used on the website.",
           "You can manage or block cookies through your browser settings. Blocking some cookies may affect the availability or functionality of certain features."
         ]
       },
@@ -59,7 +59,7 @@ const sections = {
         heading: "7. Your Choices and Rights",
         paragraphs: [
           "Depending on applicable law, you may have rights relating to your personal data, including rights to request access to or correction of personal information, withdraw consent where processing is based on consent, request deletion where applicable, and raise a complaint about our handling of personal data.",
-          "To make a privacy-related request, please use our Contact page and clearly state that your request concerns privacy or personal data. We may need to verify the request before taking action."
+          "To make a privacy related request, please use our Contact page and clearly state that your request concerns privacy or personal data. We may need to verify the request before taking action."
         ]
       },
       {
@@ -97,7 +97,7 @@ const sections = {
       {
         heading: "1. Use of the Website",
         paragraphs: [
-          "You may use our website and browser games for lawful personal and non-commercial purposes, subject to these Terms and applicable law.",
+          "You may use our website and browser games for lawful personal and non commercial purposes, subject to these Terms and applicable law.",
           "You agree not to interfere with the operation or security of the website, attempt to gain unauthorized access to systems or accounts, introduce malicious code, abuse advertising or reward systems, scrape or systematically copy site content without permission, or use our services for unlawful purposes."
         ]
       },
@@ -112,8 +112,8 @@ const sections = {
       {
         heading: "3. Advertising and Rewards",
         paragraphs: [
-          "Advertising may appear on the Arcade and individual game pages. We may use third-party advertising services, including Google advertising products.",
-          "Some games may offer optional rewarded-ad features, such as continuing a run after game over. Reward availability, eligibility, frequency, and behavior may change as advertising integrations are updated.",
+          "Advertising may appear on the Arcade and individual game pages. We may use third party advertising services, including Google advertising products.",
+          "Some games may offer optional rewarded ad features, such as continuing a run after game over. Reward availability, eligibility, frequency, and behavior may change as advertising integrations are updated.",
           "You must not manipulate, automate, fraudulently interact with, or otherwise abuse advertisements or rewarded features."
         ]
       },
@@ -125,16 +125,16 @@ const sections = {
         ]
       },
       {
-        heading: "5. Third-Party Content and Links",
+        heading: "5. Third Party Content and Links",
         paragraphs: [
-          "The website may contain links to third-party websites, services, advertising providers, or social platforms. We do not control and are not responsible for third-party content, availability, security, or privacy practices.",
-          "Your use of third-party services is subject to the terms and policies of those providers."
+          "The website may contain links to third party websites, services, advertising providers, or social platforms. We do not control and are not responsible for third party content, availability, security, or privacy practices.",
+          "Your use of third party services is subject to the terms and policies of those providers."
         ]
       },
       {
         heading: "6. Availability and Disclaimers",
         paragraphs: [
-          "The website and games are provided on an “as is” and “as available” basis to the extent permitted by law. We do not guarantee that the website, games, or any particular feature will always be available, uninterrupted, error-free, or compatible with every device or browser.",
+          "The website and games are provided on an “as is” and “as available” basis to the extent permitted by law. We do not guarantee that the website, games, or any particular feature will always be available, uninterrupted, error free, or compatible with every device or browser.",
           "We may modify, suspend, or discontinue any part of the website or games at any time."
         ]
       },
@@ -178,7 +178,7 @@ const sections = {
       "This Cookie Policy explains how North Horizon Studios Private Limited (“North Horizon Studios”, “we”, “us”, or “our”) may use cookies and similar technologies on the North Horizon Studios website, Arcade, and browser games.",
     content: [
       {
-        heading: "1. What Are Cookies?",
+        heading: "1. What Are Cookies",
         paragraphs: [
           "Cookies are small files or pieces of information stored in your browser or device. Similar technologies, such as local storage, may also be used to remember information or support website functionality."
         ]
@@ -187,14 +187,14 @@ const sections = {
         heading: "2. How We Use Cookies and Similar Technologies",
         paragraphs: [
           "We may use technologies for essential website functions, security, remembering preferences, understanding technical performance, and supporting advertising where advertising is enabled.",
-          "Our browser games may also use local storage to save information such as high scores, settings, or other gameplay preferences. This local storage is different from a server-side account and normally remains on your device."
+          "Our browser games may also use local storage to save information such as high scores, settings, or other gameplay preferences. This local storage is different from a server side account and normally remains on your device."
         ]
       },
       {
         heading: "3. Advertising Cookies",
         paragraphs: [
           "Advertising may be displayed on our Arcade and individual game pages. When Google advertising services are enabled, Google and its partners may use cookies or similar technologies to serve and measure ads and, depending on applicable settings and user choices, personalize advertising.",
-          "Google states that publishers using AdSense must disclose the use of advertising cookies and relevant third-party technologies in their privacy policy.",
+          "Google states that publishers using AdSense must disclose the use of advertising cookies and relevant third party technologies in their privacy policy.",
           "You can manage advertising personalization through the controls provided by Google and can also manage cookies through your browser settings."
         ]
       },
@@ -210,14 +210,14 @@ const sections = {
       {
         heading: "5. Managing Cookies",
         paragraphs: [
-          "Most browsers allow you to view, delete, block, or restrict cookies through their settings. You can also clear local storage for this website through your browser's site-data controls.",
+          "Most browsers allow you to view, delete, block, or restrict cookies through their settings. You can also clear local storage for this website through your browser's site data controls.",
           "If you block or delete certain technologies, some website or game features may not work as intended."
         ]
       },
       {
-        heading: "6. Third-Party Providers",
+        heading: "6. Third Party Providers",
         paragraphs: [
-          "Third-party providers may place or access their own technologies when their services are used on our website. Their use of information is governed by their own policies, and we do not control those policies.",
+          "Third party providers may place or access their own technologies when their services are used on our website. Their use of information is governed by their own policies, and we do not control those policies.",
           "For Google advertising services, please review Google's published information about how it uses cookies and data on partner sites."
         ]
       },

@@ -20,7 +20,7 @@ const principles = [
   {
     number: "04",
     title: "MAKE IT MEMORABLE",
-    text: "We want our games to leave something behind — a feeling, a moment, or a reason to come back.",
+    text: "We want our games to leave something behind, a feeling, a moment, or a reason to come back.",
   },
 ];
 
@@ -28,7 +28,7 @@ const process = [
   {
     number: "01",
     title: "THE IDEA",
-    text: "A simple mechanic, an unusual thought, or a question that makes us wonder: what if?",
+    text: "A simple mechanic, an unusual thought, or a question that makes us wonder, what if.",
   },
   {
     number: "02",
@@ -38,7 +38,7 @@ const process = [
   {
     number: "03",
     title: "THE BUILD",
-    text: "If it works, we take it further — adding depth, personality, polish, and a world around it.",
+    text: "If it works, we take it further, adding depth, personality, polish, and a world around it.",
   },
   {
     number: "04",
@@ -65,7 +65,7 @@ export default function About() {
           <h1>
             WE BUILD
             <span>WORLDS TO</span>
-            <strong>GET LOST IN.</strong>
+            <strong>GET LOST IN</strong>
           </h1>
 
           <p>
@@ -90,8 +90,8 @@ export default function About() {
 
         <div className="about-intro-content">
           <h2>
-            SMALL STUDIO.
-            <span>BIG HORIZON.</span>
+            SMALL STUDIO
+            <span>BIG HORIZON</span>
           </h2>
 
           <p className="about-intro-lead">
@@ -120,9 +120,9 @@ export default function About() {
 
         <p>
           <span>THE GOAL ISN'T TO</span>
-          <strong>MAKE MORE GAMES.</strong>
+          <strong>MAKE MORE GAMES</strong>
           <span>IT'S TO MAKE</span>
-          <strong>BETTER ONES.</strong>
+          <strong>BETTER ONES</strong>
         </p>
 
         <div className="about-statement-line" />
@@ -132,11 +132,11 @@ export default function About() {
 
       <section className="about-principles">
         <div className="about-section-heading">
-          <span>02 — OUR PRINCIPLES</span>
+          <span>02, OUR PRINCIPLES</span>
 
           <h2>
             WHAT WE
-            <span>BELIEVE.</span>
+            <span>BELIEVE</span>
           </h2>
         </div>
 
@@ -159,11 +159,11 @@ export default function About() {
 
       <section className="about-process">
         <div className="about-section-heading about-process-heading">
-          <span>03 — HOW WE WORK</span>
+          <span>03, HOW WE WORK</span>
 
           <h2>
             FROM IDEA
-            <span>TO PLAYABLE.</span>
+            <span>TO PLAYABLE</span>
           </h2>
 
           <p>
@@ -197,7 +197,7 @@ export default function About() {
 
         <h2>
           WE'RE JUST
-          <span>GETTING STARTED.</span>
+          <span>GETTING STARTED</span>
         </h2>
 
         <p>

@@ -1516,7 +1516,7 @@ export default function ColorDrop() {
           <h1>
             COLOR
             <br />
-            DROP.
+            DROP
           </h1>
 
 
@@ -1773,7 +1773,7 @@ export default function ColorDrop() {
                   <>
 
                     <div className="eyebrow">
-                      READY?
+                      READY
                     </div>
 
 
@@ -1829,7 +1829,7 @@ export default function ColorDrop() {
 
 
         {/* ===================================================
-            OUTSIDE-FULLSCREEN BANNER AD
+            OUTSIDE FULLSCREEN BANNER AD
             =================================================== */}
 
         {!isFullscreen && (

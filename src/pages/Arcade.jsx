@@ -4,7 +4,7 @@ import { ArrowRight, Gamepad2, Zap } from "lucide-react";
 const games = [
   {
     title: "Color Drop",
-    description: "Match the falling colors. How long can you survive?",
+    description: "Match the falling colors. See how long you can survive.",
     category: "Arcade",
     difficulty: "Easy",
     status: "NEW",
@@ -134,13 +134,13 @@ export default function Arcade() {
             <br />
             HORIZON
             <br />
-            ARCADE.
+            ARCADE
           </h1>
 
           <p>
             Free browser games. No downloads.
             <br />
-            No sign-ups. Just play.
+            No sign ups. Just play.
           </p>
 
         </div>
@@ -164,16 +164,16 @@ export default function Arcade() {
           </div>
 
           <h2>
-            PICK A GAME.
+            PICK A GAME
             <br />
             SEE HOW LONG
             <br />
-            YOU LAST.
+            YOU LAST
           </h2>
         </div>
 
         <p>
-          Welcome to the North Horizon Arcade — a growing
+          Welcome to the North Horizon Arcade, a growing
           collection of small games designed to be played
           instantly in your browser.
         </p>
@@ -212,7 +212,7 @@ export default function Arcade() {
             <h2>
               CHOOSE YOUR
               <br />
-              CHALLENGE.
+              CHALLENGE
             </h2>
           </div>
 
@@ -249,7 +249,7 @@ export default function Arcade() {
         <h2>
           WE'RE JUST
           <br />
-          GETTING STARTED.
+          GETTING STARTED
         </h2>
 
         <p>

@@ -10,7 +10,7 @@ const contactTypes = [
   {
     number: "02",
     title: "PARTNERSHIPS",
-    text: "Interested in working together on something exciting?",
+    text: "Interested in working together on something exciting.",
   },
   {
     number: "03",
@@ -36,11 +36,11 @@ export default function Contact() {
 
           <h1>
             LET'S BUILD
-            <span>SOMETHING.</span>
+            <span>SOMETHING</span>
           </h1>
 
           <p>
-            Have an idea, a question, or simply want to say hello?
+            Have an idea, a question, or simply want to say hello.
             We'd love to hear from you.
           </p>
         </div>
@@ -66,7 +66,7 @@ export default function Contact() {
           <div className="contact-options-heading">
             <h2>
               HAVE A
-              <span>REASON?</span>
+              <span>REASON</span>
             </h2>
 
             <p>
@@ -101,7 +101,7 @@ export default function Contact() {
 
           <h2>
             YOUR NEXT
-            <span>IDEA STARTS HERE.</span>
+            <span>IDEA STARTS HERE</span>
           </h2>
 
           <a

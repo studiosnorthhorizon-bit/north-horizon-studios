@@ -42,7 +42,7 @@ const projects = [
     status: "IN DEVELOPMENT",
     platform: "MOBILE",
     description:
-      "A fast-paced endless runner built around momentum, timing, and the simple instinct to keep moving forward.",
+      "A fast paced endless runner built around momentum, timing, and the simple instinct to keep moving forward.",
     accent: "kakeru",
     image: "/assets/home/kakeru.png",
   },
@@ -106,7 +106,7 @@ export default function Projects() {
 
           <h1>
             PROJECTS
-            <span>WE'RE BUILDING.</span>
+            <span>WE'RE BUILDING</span>
           </h1>
 
           <p>
@@ -116,7 +116,7 @@ export default function Projects() {
 
         <div className="projects-hero-meta">
           <span>05 PROJECTS</span>
-          <span>2026 — PRESENT</span>
+          <span>2026, PRESENT</span>
         </div>
       </section>
 
@@ -171,7 +171,7 @@ export default function Projects() {
 
         <h2>
           THIS IS ONLY
-          <span>THE BEGINNING.</span>
+          <span>THE BEGINNING</span>
         </h2>
 
         <p>

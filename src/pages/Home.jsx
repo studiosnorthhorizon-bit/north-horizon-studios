@@ -20,7 +20,7 @@ const featuredGames = [
   },
   {
     name: "Predictable",
-    sub: "Rage. Solve. Repeat.",
+    sub: "Rage, Solve, Repeat.",
     image: "/assets/home/predictable.png",
   },
 ];
@@ -237,7 +237,7 @@ export default function Home() {
             <br />
             PEOPLE WANT
             <br />
-            TO COME BACK TO.
+            TO COME BACK TO
           </h1>
 
           <p className="home-hero-copy">
@@ -342,7 +342,7 @@ export default function Home() {
               <br />
               ENTERTAINMENT THAT INSPIRES,
               <br />
-              CONNECTS AND MAKES A POSITIVE IMPACT.
+              CONNECTS AND MAKES A POSITIVE IMPACT
             </h2>
           </div>
 
