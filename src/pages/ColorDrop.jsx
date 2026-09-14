@@ -1560,23 +1560,6 @@ export default function ColorDrop() {
           </div>
 
 
-          {/* =================================================
-              DESKTOP BANNER AD
-              ================================================= */}
-
-          <div className="color-drop-ad color-drop-ad-desktop">
-
-            <span>
-              ADVERTISEMENT
-            </span>
-
-
-            <div>
-              AD SPACE
-            </div>
-
-          </div>
-
         </aside>
 
 
@@ -1805,49 +1788,8 @@ export default function ColorDrop() {
           </div>
 
 
-          {/* =================================================
-              FULLSCREEN BANNER AD
-              ================================================= */}
-
-          {isFullscreen && (
-
-            <div className="color-drop-fullscreen-ad">
-
-              <span>
-                ADVERTISEMENT
-              </span>
-
-              <div>
-                AD SPACE
-              </div>
-
-            </div>
-
-          )}
-
         </div>
 
-
-        {/* ===================================================
-            OUTSIDE FULLSCREEN BANNER AD
-            =================================================== */}
-
-        {!isFullscreen && (
-
-          <div className="color-drop-ad color-drop-inline-ad">
-
-            <span>
-              ADVERTISEMENT
-            </span>
-
-
-            <div>
-              AD SPACE
-            </div>
-
-          </div>
-
-        )}
 
       {/* =====================================================
           DIFFICULTY
@@ -1906,23 +1848,6 @@ export default function ColorDrop() {
 
       </section>
 
-
-      {/* =====================================================
-          BOTTOM AD
-          ===================================================== */}
-
-      <div className="color-drop-ad color-drop-ad-bottom">
-
-        <span>
-          ADVERTISEMENT
-        </span>
-
-
-        <div>
-          AD SPACE
-        </div>
-
-      </div>
 
     </main>
   );

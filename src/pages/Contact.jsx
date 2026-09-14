@@ -5,17 +5,17 @@ const contactTypes = [
   {
     number: "01",
     title: "BUSINESS",
-    text: "For business inquiries, collaborations, and opportunities.",
+    text: "For business inquiries, studio opportunities, commercial work and questions about North Horizon Studios.",
   },
   {
     number: "02",
     title: "PARTNERSHIPS",
-    text: "Interested in working together on something exciting.",
+    text: "For collaborations, creative partnerships and opportunities to work together on games, technology or original projects.",
   },
   {
     number: "03",
     title: "PRESS",
-    text: "For press, media, interviews, and studio information.",
+    text: "For press inquiries, interviews, media requests and additional information about our studio and projects.",
   },
 ];
 
@@ -40,8 +40,9 @@ export default function Contact() {
           </h1>
 
           <p>
-            Have an idea, a question, or simply want to say hello.
-            We'd love to hear from you.
+            Have an idea, a question, or an opportunity you'd like to discuss.
+            North Horizon Studios is always open to thoughtful conversations
+            about games, creative work, partnerships and new ideas.
           </p>
         </div>
 
@@ -70,8 +71,9 @@ export default function Contact() {
             </h2>
 
             <p>
-              Whatever you're reaching out about, drop us a message and
-              we'll get back to you.
+              Whether you are interested in our games, want to explore a
+              partnership or need information about the studio, send us a
+              message and tell us what you have in mind.
             </p>
           </div>
 

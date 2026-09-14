@@ -9,7 +9,7 @@ const projects = [
     status: "IN DEVELOPMENT",
     platform: "PC / MOBILE",
     description:
-      "A deceptively simple puzzle game designed to test patience, precision, and the player's ability to see what is coming next.",
+      "Predictable is a puzzle experience built around patience, precision and learning from each attempt. Its simple foundation creates increasingly challenging situations where players need to observe patterns, make decisions and understand what is coming next.",
     accent: "predictable",
     image: "/assets/home/predictable.png",
   },
@@ -20,7 +20,7 @@ const projects = [
     status: "IN DEVELOPMENT",
     platform: "MOBILE",
     description:
-      "A vertical journey through a world that keeps expanding above the clouds. Jump, climb, and survive six increasingly strange worlds.",
+      "Skybound is a vertical platforming adventure focused on movement, timing and progression. The journey takes players through six distinct worlds, with each environment introducing a new stage of the climb and expanding the adventure above the clouds.",
     accent: "skybound",
     image: "/assets/home/skybound.png",
   },
@@ -31,7 +31,7 @@ const projects = [
     status: "IN DEVELOPMENT",
     platform: "MOBILE",
     description:
-      "A minimalist memory challenge where every round tests how quickly you can observe, remember, and react.",
+      "Memory Tiles is a minimalist memory challenge built around observation and recall. Players study a sequence of tiles and reproduce it correctly, testing concentration and consistency as they work through increasingly demanding rounds.",
     accent: "memory",
     image: "/assets/home/memory-tiles.png",
   },
@@ -42,7 +42,7 @@ const projects = [
     status: "IN DEVELOPMENT",
     platform: "MOBILE",
     description:
-      "A fast paced endless runner built around momentum, timing, and the simple instinct to keep moving forward.",
+      "Kakeru is an endless runner built around momentum, timing and quick reactions. Players move through an ongoing environment, avoid obstacles and try to extend their run as far as possible while the challenge continues to develop.",
     accent: "kakeru",
     image: "/assets/home/kakeru.png",
   },
@@ -53,7 +53,7 @@ const projects = [
     status: "LIVE",
     platform: "WEB",
     description:
-      "A collection of fast, accessible games built around one idea: simple controls, instant feedback, and gameplay that keeps you coming back.",
+      "North Horizon Arcade is our live collection of original browser games. The Arcade includes reflex challenges, puzzle games, timing tests and skill based experiences designed around simple controls, immediate feedback and short sessions that can be started directly from the web.",
     accent: "arcade",
     image: "/assets/arcade/hero.png",
   },
@@ -110,7 +110,9 @@ export default function Projects() {
           </h1>
 
           <p>
-            Games, experiments, and ideas we're turning into something real.
+            Games, experiments and original ideas we're developing across
+            mobile and web. Each project begins with a simple concept and
+            develops through testing, iteration and play.
           </p>
         </div>
 
@@ -125,8 +127,9 @@ export default function Projects() {
           <span>SELECTED WORK</span>
 
           <p>
-            We believe great games can start with a very simple idea.
-            What matters is what you do with it.
+            We believe great games can start with a very simple idea. What
+            matters is how that idea develops through experimentation, design
+            and the process of making something people genuinely enjoy.
           </p>
         </div>
 
@@ -154,11 +157,6 @@ export default function Projects() {
 
                 <div className="project-card-bottom">
                   <span>{project.platform}</span>
-
-                  <span className="project-arrow">
-                    VIEW PROJECT
-                    <span>↗</span>
-                  </span>
                 </div>
               </div>
             </article>
@@ -175,8 +173,9 @@ export default function Projects() {
         </h2>
 
         <p>
-          We're building a studio around experimentation, memorable
-          gameplay, and ideas worth taking further.
+          We're building a studio around experimentation, memorable gameplay
+          and original ideas worth taking further. Every project adds something
+          new to what North Horizon can create next.
         </p>
       </section>
     </main>

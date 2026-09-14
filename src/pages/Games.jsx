@@ -7,7 +7,7 @@ const games = [
     category: "Mobile · Adventure",
     status: "In Development",
     description:
-      "A fast, vertical platforming adventure where every jump takes you somewhere new.",
+      "Skybound is a vertical platforming adventure built around movement, timing and progression. Players climb through a series of increasingly ambitious environments, with each area introducing a new part of the journey. The project is designed to make every jump feel purposeful while giving players a reason to keep climbing and discover what comes next.",
     image:
       "/assets/home/skybound.png",
   },
@@ -16,7 +16,7 @@ const games = [
     category: "Mobile · Puzzle",
     status: "In Development",
     description:
-      "A simple memory game that gets increasingly challenging as your score climbs.",
+      "Memory Tiles is a focused puzzle experience built around observation and recall. Players study a sequence of tiles and attempt to reproduce it correctly as the challenge develops. The game keeps its core idea simple while gradually asking players to improve their concentration, memory and consistency.",
     image:
       "/assets/home/memory-tiles.png",
   },
@@ -25,7 +25,7 @@ const games = [
     category: "Mobile · Endless Runner",
     status: "In Development",
     description:
-      "Run, react and survive. A fast paced endless runner built for quick sessions.",
+      "Kakeru is an endless runner focused on quick reactions, timing and survival. Players move through an ever changing environment while avoiding obstacles and trying to continue their run for as long as possible. The project is designed around short sessions that are easy to start and difficult to master.",
     image:
       "/assets/home/kakeru.png",
   },
@@ -34,7 +34,7 @@ const games = [
     category: "Mobile · Puzzle",
     status: "In Development",
     description:
-      "A deceptively simple puzzle game designed to make you think twice.",
+      "Predictable is a puzzle game built around observation, decision making and learning from mistakes. Its simple presentation hides challenges that encourage players to think carefully before making their next move. The project explores how a straightforward idea can become increasingly engaging through thoughtful puzzle design.",
     image:
       "/assets/home/predictable.png",
   },
@@ -44,7 +44,12 @@ function GameRow({ game, index }) {
   return (
     <article className={`games-page-row ${index % 2 !== 0 ? "reverse" : ""}`}>
       <div className="games-page-image">
-        <img src={game.image} alt={game.title} loading="lazy" decoding="async" />
+        <img
+          src={game.image}
+          alt={game.title}
+          loading="lazy"
+          decoding="async"
+        />
 
         <div className="games-page-image-overlay" />
 
@@ -94,8 +99,9 @@ export default function Games() {
           </h1>
 
           <p>
-            Original games built with curiosity, experimentation
-            and a lot of late nights.
+            North Horizon Studios develops original games across mobile and
+            web, exploring different genres, mechanics and ways to create
+            memorable play experiences.
           </p>
         </div>
       </section>
@@ -114,10 +120,12 @@ export default function Games() {
         </h2>
 
         <p>
-          We're building a collection of original games across
-          mobile and web. Some are experiments, some are bigger
-          ambitions, all of them start with one simple question.
-          can we make something people genuinely enjoy playing.
+          We are building a growing collection of original games across mobile
+          and web. Our projects range from platforming adventures and puzzle
+          experiences to endless runners and experimental ideas. Each project
+          gives us an opportunity to explore a different style of gameplay
+          while learning more about what makes an experience enjoyable,
+          approachable and worth returning to.
         </p>
       </section>
 

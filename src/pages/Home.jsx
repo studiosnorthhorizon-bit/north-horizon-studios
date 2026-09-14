@@ -5,22 +5,22 @@ import { Gamepad2, Users, Leaf, Globe2 } from "lucide-react";
 const featuredGames = [
   {
     name: "Skybound",
-    sub: "A vertical adventure",
+    sub: "A vertical adventure built around movement, discovery and progression",
     image: "/assets/home/skybound.png",
   },
   {
     name: "Memory Tiles",
-    sub: "Test your mind",
+    sub: "A focused memory challenge that rewards attention and consistency",
     image: "/assets/home/memory-tiles.png",
   },
   {
     name: "Kakeru",
-    sub: "Keep running",
+    sub: "An endless running experience built around timing and quick reactions",
     image: "/assets/home/kakeru.png",
   },
   {
     name: "Predictable",
-    sub: "Rage, Solve, Repeat.",
+    sub: "A puzzle experience designed to test patience, timing and problem solving",
     image: "/assets/home/predictable.png",
   },
 ];
@@ -242,9 +242,12 @@ export default function Home() {
 
           <p className="home-hero-copy">
             North Horizon Studios is an independent game studio creating
-            original games across mobile, web and beyond. We are a small team
-            with big dreams, building games that are fun, creative and made
-            for everyone.
+            original games for mobile, web and beyond. We explore different
+            genres, mechanics and styles while keeping our focus on simple
+            ideas that are easy to understand and enjoyable to play. From
+            quick browser games to larger original projects, every experience
+            we build starts with the goal of giving players something worth
+            returning to.
           </p>
 
           <div className="home-actions">
@@ -282,8 +285,13 @@ export default function Home() {
           </h2>
 
           <p>
-            A collection of free browser games made by us. No downloads, no
-            sign ups, just click and play. New games added regularly.
+            North Horizon Arcade is our collection of free browser games built
+            for quick sessions and easy access. Each game is designed around a
+            clear idea, responsive controls and a challenge that can be
+            understood within seconds. There are no downloads or sign ups
+            required. Choose a game, start playing and see how far you can go.
+            We continue to add new experiences as we experiment with new
+            gameplay ideas.
           </p>
 
           <Link className="home-button home-button-arcade" to="/arcade">
@@ -303,29 +311,36 @@ export default function Home() {
             icon={<Gamepad2 />}
             title="Creativity First"
           >
-            We love experimenting and bringing fresh ideas to life.
+            We enjoy experimenting with new ideas, mechanics and visual
+            directions. Our projects give us room to try unusual concepts and
+            turn small ideas into complete experiences.
           </Value>
 
           <Value
             icon={<Users />}
             title="Built For Everyone"
           >
-            Games should be fun, accessible and inclusive.
+            We believe games should be welcoming and easy to understand.
+            Whether someone plays for a few minutes or spends hours exploring,
+            the experience should feel approachable and rewarding.
           </Value>
 
           <Value
             icon={<Leaf />}
             title="A Positive Impact"
           >
-            We believe games can do good, for people, communities and the
-            world around us.
+            We want the things we create to leave a positive impression. That
+            means thinking about the people who play our games, the communities
+            around them and the wider world we are part of.
           </Value>
 
           <Value
             icon={<Globe2 />}
             title="A Global Perspective"
           >
-            We are a small studio, but our vision is global.
+            Games connect people across different places and cultures. We are
+            building from a small studio with the ambition to create original
+            experiences that can be enjoyed by players anywhere.
           </Value>
         </div>
       </section>
@@ -348,9 +363,12 @@ export default function Home() {
 
           <div className="home-mission-side">
             <p>
-              We are here to build more than just games. We want to create
-              experiences that people remember, communities that grow, and a
-              brighter future through play.
+              We are building North Horizon Studios around the belief that
+              games can be more than something to pass the time. They can
+              create memories, encourage curiosity, bring people together and
+              give players a reason to return. Our goal is to build a growing
+              library of original experiences across different platforms while
+              staying curious about what games can become.
             </p>
 
             <Link className="home-button home-button-light" to="/about">

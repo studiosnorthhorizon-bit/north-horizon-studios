@@ -470,13 +470,7 @@ function MemoryRush() {
           <p className="memory-rush-subtitle">
             Watch carefully. Remember everything.
           </p>
-
-          <div className="memory-rush-desktop-ad">
-            <span>ADVERTISEMENT</span>
-            <div>AD SPACE</div>
-          </div>
-
-          <div className="memory-rush-description">
+<div className="memory-rush-description">
             <p>
               Watch the sequence light up, then
               repeat it in exactly the same order.
@@ -600,14 +594,7 @@ function MemoryRush() {
               )}
 
               {/* AD LOADING */}
-              {watchingAd && (
-                <div className="memory-rush-ad-loading">
-                  <div className="memory-rush-ad-spinner" />
-                  <span>WATCHING AD</span>
-                </div>
-              )}
-
-              {/* GAME GRID */}
+{/* GAME GRID */}
               {running && !watchingAd && (
                 <div className="memory-rush-play-area">
 
@@ -689,24 +676,10 @@ function MemoryRush() {
             </div>
 
             {/* FULLSCREEN AD */}
-            {fullscreen && (
-              <div className="memory-rush-fullscreen-ad">
-                <span>ADVERTISEMENT</span>
-                <div>AD SPACE</div>
-              </div>
-            )}
-
-          </div>
+</div>
 
           {/* INLINE AD */}
-          {!fullscreen && (
-            <div className="memory-rush-inline-ad">
-              <span>ADVERTISEMENT</span>
-              <div>AD SPACE</div>
-            </div>
-          )}
-
-          {/* DIFFICULTY */}
+{/* DIFFICULTY */}
           <section className="memory-rush-controls">
             <div className="memory-rush-mode-heading">
               <span>DIFFICULTY</span>

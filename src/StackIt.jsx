@@ -1098,10 +1098,6 @@ export default function StackIt() {
             </div>
           </div>
 
-          <div className="stack-it-ad stack-it-ad-desktop">
-            <span>ADVERTISEMENT</span>
-            <div>AD SPACE</div>
-          </div>
         </aside>
 
         <div
@@ -1221,20 +1217,8 @@ export default function StackIt() {
             )}
           </div>
 
-          {isFullscreen && (
-            <div className="stack-it-fullscreen-ad">
-              <span>ADVERTISEMENT</span>
-              <div>AD SPACE</div>
-            </div>
-          )}
         </div>
 
-        {!isFullscreen && (
-          <div className="stack-it-ad stack-it-inline-ad">
-            <span>ADVERTISEMENT</span>
-            <div>AD SPACE</div>
-          </div>
-        )}
 
         <section className="stack-it-modes">
           <div className="eyebrow">
@@ -1286,10 +1270,6 @@ export default function StackIt() {
         </p>
       </section>
 
-      <div className="stack-it-ad stack-it-ad-bottom">
-        <span>ADVERTISEMENT</span>
-        <div>AD SPACE</div>
-      </div>
     </main>
   );
 }

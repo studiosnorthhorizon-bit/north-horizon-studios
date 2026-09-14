@@ -851,13 +851,7 @@ function QuickSwitch() {
           <p className="quick-switch-subtitle">
             Switch lanes. Stay alive.
           </p>
-
-          <div className="quick-switch-desktop-ad">
-            <span>ADVERTISEMENT</span>
-            <div>AD SPACE</div>
-          </div>
-
-          <div className="quick-switch-description">
+<div className="quick-switch-description">
             <p>
               Obstacles are coming fast. Tap anywhere
               to switch between the two lanes.
@@ -969,37 +963,14 @@ function QuickSwitch() {
                   </div>
                 </div>
               )}
-
-              {watchingAd && (
-                <div className="quick-switch-ad-loading">
-                  <div className="quick-switch-ad-spinner" />
-                  <span>WATCHING AD</span>
-                </div>
-              )}
-
-              {running && !watchingAd && (
+{running && !watchingAd && (
                 <div className="quick-switch-switch-hint">
                   TAP TO SWITCH
                 </div>
               )}
             </div>
-
-            {fullscreen && (
-              <div className="quick-switch-fullscreen-ad">
-                <span>ADVERTISEMENT</span>
-                <div>AD SPACE</div>
-              </div>
-            )}
-          </div>
-
-          {!fullscreen && (
-            <div className="quick-switch-inline-ad">
-              <span>ADVERTISEMENT</span>
-              <div>AD SPACE</div>
-            </div>
-          )}
-
-          <section className="quick-switch-controls">
+</div>
+<section className="quick-switch-controls">
             <div className="quick-switch-mode-heading">
               <span>DIFFICULTY</span>
               <small>{currentMode.label}</small>

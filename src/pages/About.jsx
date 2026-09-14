@@ -5,22 +5,22 @@ const principles = [
   {
     number: "01",
     title: "PLAY FIRST",
-    text: "Every idea starts with the player. If the game isn't fun, nothing else matters.",
+    text: "Every idea starts with the player. Before we worry about features, visuals or scale, we ask whether the experience is genuinely enjoyable. If the game is not fun, nothing else matters.",
   },
   {
     number: "02",
     title: "START SMALL",
-    text: "Big experiences don't always need big beginnings. We believe a great idea can start with a simple prototype.",
+    text: "Big experiences do not always need big beginnings. We believe a strong idea can start with a simple prototype that answers one important question and gives us something real to play.",
   },
   {
     number: "03",
     title: "KEEP EXPERIMENTING",
-    text: "We build, test, break, rebuild, and learn. The best ideas often appear somewhere in between.",
+    text: "We build, test, break, rebuild and learn. Trying different mechanics and approaches helps us discover what works, what does not and where an idea can become something more interesting.",
   },
   {
     number: "04",
     title: "MAKE IT MEMORABLE",
-    text: "We want our games to leave something behind, a feeling, a moment, or a reason to come back.",
+    text: "We want our games to leave something behind, whether that is a feeling, a moment, a challenge that stays in your mind or a reason to come back and play again.",
   },
 ];
 
@@ -28,22 +28,22 @@ const process = [
   {
     number: "01",
     title: "THE IDEA",
-    text: "A simple mechanic, an unusual thought, or a question that makes us wonder, what if.",
+    text: "A simple mechanic, an unusual thought or a question that makes us wonder what if. Every project begins with curiosity and a reason to explore the idea further.",
   },
   {
     number: "02",
     title: "THE PROTOTYPE",
-    text: "We strip the idea down to its core and find out if the fun is actually there.",
+    text: "We strip the idea down to its core and find out if the fun is actually there. Prototyping lets us test the most important parts of a game before building everything around them.",
   },
   {
     number: "03",
     title: "THE BUILD",
-    text: "If it works, we take it further, adding depth, personality, polish, and a world around it.",
+    text: "If the core works, we take it further by adding depth, personality, presentation and polish. This is where a simple mechanic starts becoming a complete game experience.",
   },
   {
     number: "04",
     title: "THE RELEASE",
-    text: "We put it in players' hands, listen, learn, and keep moving toward the next horizon.",
+    text: "We put the game in players' hands, listen to how people experience it, learn from the results and use that knowledge to improve our work and move toward the next project.",
   },
 ];
 
@@ -69,8 +69,10 @@ export default function About() {
           </h1>
 
           <p>
-            An independent game studio focused on building memorable
-            experiences from simple ideas.
+            North Horizon Studios is an independent game studio focused on
+            creating original experiences across mobile, web and other
+            platforms. We start with simple ideas and explore how far they can
+            go through thoughtful game design, experimentation and iteration.
           </p>
         </div>
 
@@ -100,15 +102,26 @@ export default function About() {
           </p>
 
           <p>
-            We create games across different genres and platforms, constantly
-            exploring new mechanics, new ideas, and new ways to make players
-            feel something.
+            We create original games across different genres and platforms,
+            from mobile projects and puzzle experiences to browser games built
+            for quick sessions. Each project gives us a chance to explore a
+            different idea and learn something new about the craft of making
+            games.
           </p>
 
           <p>
-            We're not interested in making games just because they fit a
-            formula. We want to experiment, take ideas further, and build
-            experiences that people remember.
+            We are interested in the entire process of creating a game, from
+            the first rough concept and playable prototype to the details that
+            make a finished experience feel complete. We experiment with
+            mechanics, presentation and player interaction while keeping the
+            core experience at the center of every decision.
+          </p>
+
+          <p>
+            We are not interested in making games simply because they fit a
+            formula. We want to explore ideas, take them further and build
+            experiences that people remember. North Horizon is still a growing
+            studio, and every project is part of that journey.
           </p>
         </div>
       </section>
@@ -167,8 +180,9 @@ export default function About() {
           </h2>
 
           <p>
-            We keep our process simple: find the fun first, then build
-            everything around it.
+            We keep our process simple: find the fun first, then build the
+            experience around it. Every project moves through experimentation,
+            testing and refinement as we discover what makes the idea work.
           </p>
         </div>
 
@@ -201,9 +215,11 @@ export default function About() {
         </h2>
 
         <p>
-          North Horizon is being built one game at a time. There are worlds
-          we haven't imagined yet, mechanics we haven't discovered, and
-          stories waiting somewhere beyond the horizon.
+          North Horizon is being built one game at a time. We want to grow a
+          library of original experiences across different genres and
+          platforms while continuing to learn from every project we create.
+          There are worlds we have not imagined yet, mechanics we have not
+          discovered and stories waiting somewhere beyond the horizon.
         </p>
 
         <div className="about-vision-mark">

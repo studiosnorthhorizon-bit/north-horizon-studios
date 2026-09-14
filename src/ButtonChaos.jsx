@@ -330,13 +330,7 @@ function ButtonChaos() {
           <p className="button-chaos-subtitle">
             Four buttons. One target. No mistakes.
           </p>
-
-          <div className="button-chaos-desktop-ad">
-            <span>ADVERTISEMENT</span>
-            <div>AD SPACE</div>
-          </div>
-
-          <div className="button-chaos-description">
+<div className="button-chaos-description">
             <p>
               Match the target with the correct button
               before the timer runs out. Every correct
@@ -541,24 +535,8 @@ function ButtonChaos() {
             )}
 
           </div>
-
-          {isFullscreen && (
-            <div className="button-chaos-fullscreen-ad">
-              <span>ADVERTISEMENT</span>
-              <div>AD SPACE</div>
-            </div>
-          )}
-
-        </section>
-
-        {!isFullscreen && (
-          <div className="button-chaos-inline-ad">
-            <span>ADVERTISEMENT</span>
-            <div>AD SPACE</div>
-          </div>
-        )}
-
-        {/* DIFFICULTY */}
+</section>
+{/* DIFFICULTY */}
 
         <section className="button-chaos-controls">
 

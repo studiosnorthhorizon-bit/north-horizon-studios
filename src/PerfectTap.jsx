@@ -487,13 +487,7 @@ function PerfectTap() {
             Your timing gets tighter with every
             round.
           </p>
-
-          <div className="perfect-tap-desktop-ad">
-            <span>ADVERTISEMENT</span>
-            <div>AD SPACE</div>
-          </div>
-
-          <div className="perfect-tap-description">
+<div className="perfect-tap-description">
             <p>
               Tap when the moving marker lands
               inside the target zone.
@@ -636,14 +630,7 @@ function PerfectTap() {
               )}
 
               {/* AD LOADING OVERLAY */}
-              {watchingAd && (
-                <div className="perfect-tap-ad-loading">
-                  <div className="perfect-tap-ad-spinner" />
-                  <span>WATCHING AD</span>
-                </div>
-              )}
-
-              {/* PLAY AREA */}
+{/* PLAY AREA */}
               {running && !watchingAd && (
                 <div className="perfect-tap-play-area">
 
@@ -696,24 +683,10 @@ function PerfectTap() {
             </div>
 
             {/* FULLSCREEN AD */}
-            {fullscreen && (
-              <div className="perfect-tap-fullscreen-ad">
-                <span>ADVERTISEMENT</span>
-                <div>AD SPACE</div>
-              </div>
-            )}
-
-          </div>
+</div>
 
           {/* INLINE AD */}
-          {!fullscreen && (
-            <div className="perfect-tap-inline-ad">
-              <span>ADVERTISEMENT</span>
-              <div>AD SPACE</div>
-            </div>
-          )}
-
-          {/* DIFFICULTY */}
+{/* DIFFICULTY */}
           <section className="perfect-tap-controls">
             <div className="perfect-tap-mode-heading">
               <span>DIFFICULTY</span>
