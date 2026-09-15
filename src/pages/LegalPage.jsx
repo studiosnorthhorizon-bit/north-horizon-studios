@@ -2,88 +2,146 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./LegalPage.css";
 
-const LAST_UPDATED = "September 7, 2026";
+const LAST_UPDATED = "September 15, 2026";
 
 const sections = {
   privacy: {
     title: "Privacy Policy",
     intro:
-      "North Horizon Studios Private Limited (“North Horizon Studios”, “we”, “us”, or “our”) respects your privacy. This Privacy Policy explains what information may be processed when you visit the North Horizon Studios website, play our browser games, use our Arcade, or contact us.",
+      "North Horizon Studios Private Limited (“North Horizon Studios”, “we”, “us”, or “our”) respects your privacy. This Privacy Policy explains what information may be processed when you visit the North Horizon Studios website, play our browser games, use our Arcade, use our mobile applications, including Memory Tiles, or contact us.",
+
     content: [
       {
         heading: "1. Information We May Process",
         paragraphs: [
-          "We aim to collect only information that is reasonably necessary to operate, secure, improve, and communicate about our website and services.",
-          "Depending on how you use the site, this may include information you choose to provide to us, such as your name, email address, and the contents of a message submitted through our contact channels.",
-          "Technical information may also be processed automatically by your browser, hosting provider, security systems, or third party services. This can include IP address, browser type, device type, operating system, approximate location derived from IP address, referring pages, and information about requests made to our website.",
-          "Our browser games may store gameplay information such as high scores, settings, or game progress locally on your device using browser storage. This information is generally stored on your device rather than transmitted to us."
+          "We aim to collect only information that is reasonably necessary to operate, secure, improve, and communicate about our website, games, mobile applications, and services.",
+
+          "Depending on how you use our services, this may include information you choose to provide to us, such as your name, email address, and the contents of a message submitted through our contact channels.",
+
+          "When you use our website, technical information may be processed automatically by your browser, hosting provider, security systems, or third party services. This can include IP address, browser type, device type, operating system, approximate location derived from IP address, referring pages, and information about requests made to our website.",
+
+          "Our browser games may store gameplay information such as high scores, settings, or game progress locally on your device using browser storage. This information is generally stored on your device rather than transmitted to us.",
+
+          "Our mobile applications, including Memory Tiles, may store gameplay information such as game progress, settings, and high scores locally on your device. Memory Tiles does not require you to create an account in order to play the game.",
+
+          "When third party services are used within our mobile applications, those services may process certain technical or device-related information as described in the relevant sections of this Privacy Policy and in the privacy policies of those third party providers."
         ]
       },
+
       {
         heading: "2. How We Use Information",
         paragraphs: [
-          "We may use information to operate and maintain the website and games; respond to enquiries; protect the website and users from abuse, fraud, and security threats; understand technical problems and improve performance; comply with applicable law; and support advertising on pages where advertising is enabled.",
+          "We may use information to operate and maintain the website, games, and mobile applications; respond to enquiries; protect our services and users from abuse, fraud, and security threats; understand technical problems and improve performance; comply with applicable law; and support advertising on pages or applications where advertising is enabled.",
+
+          "Gameplay information stored locally on your device may be used by our games to provide features such as saving progress, maintaining settings, and displaying high scores.",
+
           "We do not sell your personal information as a standalone product."
         ]
       },
+
       {
         heading: "3. Advertising and Third Party Services",
         paragraphs: [
-          "Advertising may be displayed on our Arcade and individual game pages. When advertising is enabled, third party advertising providers, including Google and its partners, may use cookies, device identifiers, IP addresses, or similar technologies to serve, measure, limit, or personalize advertising, subject to their own policies and the choices available to users.",
-          "Google requires publishers using its advertising products to disclose relevant data collection and the use of cookies or similar technologies. For more information about how Google uses data when you use partner sites or apps, please review Google's published privacy information.",
-          "We do not control the privacy practices of third party providers. Their processing is governed by their own privacy policies and terms."
+          "Advertising may be displayed on our Arcade, individual game pages, and supported mobile applications. Our Android mobile application Memory Tiles uses Google AdMob to display advertising.",
+
+          "Google AdMob and its partners may process information such as IP address, device information, advertising identifiers, cookies or similar technologies, and information about interactions with advertisements or applications. This information may be used to serve, measure, limit, personalize, or otherwise support advertising, including for purposes such as fraud prevention and frequency management, subject to applicable settings, consent requirements, and user choices.",
+
+          "Advertising providers may use device identifiers or similar technologies to recognize a device or distinguish advertising activity. The information processed by these third party services is governed by their respective privacy policies and terms.",
+
+          "We do not control the privacy practices of third party providers. Their processing is governed by their own privacy policies and terms. For more information about how Google uses data when you use partner sites or apps, please review Google's published privacy information."
         ]
       },
+
       {
         heading: "4. Cookies and Similar Technologies",
         paragraphs: [
           "We may use cookies and similar technologies that are necessary for website operation, security, preferences, measurement, or advertising. Some cookies may be placed by third party services used on the website.",
-          "You can manage or block cookies through your browser settings. Blocking some cookies may affect the availability or functionality of certain features."
+
+          "Our browser games may use local storage to save information such as high scores, settings, or other gameplay preferences.",
+
+          "Mobile applications may use device storage or similar technologies to save gameplay information, settings, and progress directly on the device.",
+
+          "You can manage or block cookies through your browser settings. Blocking some cookies may affect the availability or functionality of certain website features."
         ]
       },
+
       {
         heading: "5. Data Sharing",
         paragraphs: [
-          "We may share information with service providers that help us host, secure, operate, maintain, or advertise on the website, where necessary for those services. We may also disclose information where required by law, legal process, or to protect our rights, users, or the security of our services.",
+          "We may share information with service providers that help us host, secure, operate, maintain, analyze, or advertise on the website, games, and mobile applications, where necessary for those services.",
+
+          "For Memory Tiles and other applications that use third party advertising services, information may be processed directly by advertising providers such as Google and its partners in accordance with their own policies and terms.",
+
+          "We may also disclose information where required by law, legal process, or to protect our rights, users, or the security of our services.",
+
           "We do not authorize third parties to use information received from us for purposes unrelated to the services they provide, except where permitted or required by applicable law."
         ]
       },
+
       {
         heading: "6. Data Retention",
         paragraphs: [
           "We retain personal information only for as long as reasonably necessary for the purpose for which it was collected, to provide services, resolve disputes, maintain security, meet legal obligations, or otherwise as permitted by applicable law.",
-          "Information stored locally by a browser game, such as a high score, remains on the user's device until it is cleared by the user, the browser, or the game."
+
+          "Information stored locally by a browser game, such as a high score, remains on the user's device until it is cleared by the user, the browser, or the game.",
+
+          "Information stored locally by a mobile application, such as gameplay progress, settings, or high scores, generally remains on the user's device until the application or its data is removed, cleared, or reset by the user or the operating system.",
+
+          "Third party providers may retain information according to their own privacy policies, retention practices, and legal obligations."
         ]
       },
+
       {
         heading: "7. Your Choices and Rights",
         paragraphs: [
           "Depending on applicable law, you may have rights relating to your personal data, including rights to request access to or correction of personal information, withdraw consent where processing is based on consent, request deletion where applicable, and raise a complaint about our handling of personal data.",
+
+          "You may also have controls provided by your device, browser, operating system, or third party advertising providers that allow you to manage certain privacy or advertising preferences.",
+
           "To make a privacy related request, please use our Contact page and clearly state that your request concerns privacy or personal data. We may need to verify the request before taking action."
         ]
       },
+
       {
         heading: "8. Children's Privacy",
         paragraphs: [
-          "Our website and games are not intended to knowingly collect personal information from children in violation of applicable law. If you believe a child has provided personal information to us in a way that should not have occurred, please contact us so that we can review the situation."
+          "Our website, games, and mobile applications are not intended to knowingly collect personal information from children in violation of applicable law.",
+
+          "If you believe a child has provided personal information to us in a way that should not have occurred, please contact us so that we can review the situation."
         ]
       },
+
       {
         heading: "9. Security",
         paragraphs: [
-          "We use reasonable technical and organizational measures appropriate to the nature of the information we handle. However, no internet transmission or storage system can be guaranteed to be completely secure."
+          "We use reasonable technical and organizational measures appropriate to the nature of the information we handle. However, no internet transmission, application, or storage system can be guaranteed to be completely secure."
         ]
       },
+
       {
-        heading: "10. Changes to This Policy",
+        heading: "10. Third Party Links and Services",
         paragraphs: [
-          "We may update this Privacy Policy from time to time to reflect changes to our website, services, advertising arrangements, or legal requirements. The updated version will be posted on this page with a revised “Last updated” date."
+          "Our website, games, and mobile applications may contain or use third party services, websites, advertising providers, or other external services.",
+
+          "Third party services may have their own privacy policies and terms. We do not control and are not responsible for the privacy practices, content, security, or availability of third party services.",
+
+          "For services provided by Google, including Google AdMob, you should review Google's applicable privacy information and policies for additional details about how Google processes information."
         ]
       },
+
       {
-        heading: "11. Contact",
+        heading: "11. Changes to This Policy",
         paragraphs: [
-          "North Horizon Studios Private Limited is the operator of this website. For privacy questions or requests, please contact us through the Contact page on this website."
+          "We may update this Privacy Policy from time to time to reflect changes to our website, services, games, mobile applications, advertising arrangements, or legal requirements. The updated version will be posted on this page with a revised “Last updated” date."
+        ]
+      },
+
+      {
+        heading: "12. Contact",
+        paragraphs: [
+          "North Horizon Studios Private Limited is the operator of this website and developer/publisher of its games and applications.",
+
+          "For privacy questions or requests, please contact North Horizon Studios Private Limited through the Contact page on this website."
         ]
       }
     ]
@@ -259,6 +317,7 @@ export default function LegalPage({ type = "privacy" }) {
           {page.content.map((section) => (
             <section className="legal-section" key={section.heading}>
               <h2>{section.heading}</h2>
+
               {section.paragraphs.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
               ))}
