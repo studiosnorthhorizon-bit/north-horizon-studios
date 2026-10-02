@@ -466,71 +466,71 @@ export default function LegalPage({ type = "privacy" }) {
 
   return (
 
-    \<main className="legal-page">
+    <main className="legal-page">
 
-      \<div className="legal-shell">
+      <div className="legal-shell">
 
-        \<Link to="/" className="legal-back">
+        <Link to="/" className="legal-back">
 
           ← Back to North Horizon Studios
 
-        \</Link>
+        </Link>
 
 
 
-        \<header className="legal-header">
+        <header className="legal-header">
 
-          \<p className="legal-eyebrow">NORTH HORIZON STUDIOS\</p>
+          <p className="legal-eyebrow">NORTH HORIZON STUDIOS</p>
 
-          \<h1>{page.title}\</h1>
+          <h1>{page.title}</h1>
 
-          \<p className="legal-updated">Last updated: {LAST_UPDATED}\</p>
+          <p className="legal-updated">Last updated: {LAST_UPDATED}</p>
 
-        \</header>
+        </header>
 
 
 
-        \<div className="legal-content">
+        <div className="legal-content">
 
-          \<p className="legal-intro">{page.intro}\</p>
+          <p className="legal-intro">{page.intro}</p>
 
 
 
           {page.content.map((section) => (
 
-            \<section className="legal-section" key={section.heading}>
+            <section className="legal-section" key={section.heading}>
 
-              \<h2>{section.heading}\</h2>
+              <h2>{section.heading}</h2>
 
 
 
               {section.paragraphs.map((paragraph) => (
 
-                \<p key={paragraph}>{paragraph}\</p>
+                <p key={paragraph}>{paragraph}</p>
 
               ))}
 
-            \</section>
+            </section>
 
           ))}
 
-        \</div>
+        </div>
 
 
 
-        \<div className="legal-footer-links">
+        <div className="legal-footer-links">
 
-          \<Link to="/privacy-policy">Privacy Policy\</Link>
+          <Link to="/privacy-policy">Privacy Policy</Link>
 
-          \<Link to="/terms">Terms of Use\</Link>
+          <Link to="/terms">Terms of Use</Link>
 
-          \<Link to="/cookie-policy">Cookie Policy\</Link>
+          <Link to="/cookie-policy">Cookie Policy</Link>
 
-        \</div>
+        </div>
 
-      \</div>
+      </div>
 
-    \</main>
+    </main>
 
   );
 
